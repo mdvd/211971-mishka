@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka"></a>
+        <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
       </div>
       <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button" name="menu">Открыть меню</button>
@@ -24,74 +25,84 @@
         <h2>Каталог товаров</h2>
       </div>
     </header>
-    <section class="catalog-items">
+    <section class="page-section  catalog-items  container">
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <img src="../img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </div>
         </a>
-        <div class="card-item__desc">
-          <a class="card-item__link" href="#"><div class="card-item__name">Зайчик-попрыгайчик</div></a>
-          <div class="card-item__spec">Рост 30 см, вес 200 г</div>
-        </div>
-        <div class="card-item__buy">
-          <div class="card-item__price">1 200 руб.</div>
-          <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+        <div class="card-item__wrapper">
+          <div class="card-item__desc">
+            <a class="card-item__name" href="#">Зайчик-попрыгайчик</a>
+            <div class="card-item__spec">Рост 30 см, вес 200 г</div>
+          </div>
+          <div class="card-item__buy">
+            <div class="card-item__price">1 200 руб.</div>
+            <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+          </div>
         </div>
       </article>
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+            <img src="../img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           </div>
         </a>
-        <div class="card-item__desc">
-          <a class="card-item__link" href="#"><div class="card-item__name">Корзинка для белья</div></a>
-          <div class="card-item__spec">Диаметр 15 см, высота 10 см</div>
-        </div>
-        <div class="card-item__buy">
-          <div class="card-item__price">690 руб.</div>
-          <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+        <div class="card-item__wrapper">
+          <div class="card-item__desc">
+            <a class="card-item__name" href="#">Корзинка для белья</a>
+            <div class="card-item__spec">Диаметр 15 см, высота 10 см</div>
+          </div>
+          <div class="card-item__buy">
+            <div class="card-item__price">690 руб.</div>
+            <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+          </div>
         </div>
       </article>
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+            <img src="../img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           </div>
         </a>
-        <div class="card-item__desc">
-          <a class="card-item__link" href="#"><div class="card-item__name">Большая корзинка для игрушек</div></a>
-          <div class="card-item__spec">Диаметр 30 см, высота 30 см</div>
-        </div>
-        <div class="card-item__buy">
-          <div class="card-item__price">1 500 руб.</div>
-          <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+        <div class="card-item__wrapper">
+          <div class="card-item__desc">
+            <a class="card-item__name" href="#">Большая корзинка для игрушек</a>
+            <div class="card-item__spec">Диаметр 15 см, высота 10 см</div>
+          </div>
+          <div class="card-item__buy">
+            <div class="card-item__price">690 руб.</div>
+            <button class="card-item__to-basket" type="button" name="to-basket">в корзину</button>
+          </div>
         </div>
       </article>
     </section>
-    <section class="promo">
-      <h2 class="promo__title">Процесс производства</h2>
+    <section class="page-section  promo  container">
+      <div class="promo__wrapper  promo__wrapper--title">
+        <h2 class="promo__title">Процесс производства</h2>
+      </div>
       <div class="promo__video">
-        <video src="#" controls preload="metadata" width="260" height="150" poster="http://placehold.it/260x150"></video>
+        <video src="#" preload="metadata" width="260" height="150" poster="../img/video-mobile@1x.jpg"></video>
       </div>
-      <div class="promo__desc">
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <div class="promo__wrapper  promo__wrapper--main">
+        <div class="promo__desc">
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        </div>
+        <a class="btn" href="form.html">Сделать заказ</a>
       </div>
-      <a class="btn  btn--promo" href="form.html">Сделать заказ</a>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="container">
         <div class="page-footer__social">
           <span class="social-links">
-            <a class="social-link  social-link--in" href="#">Мы в Инстаграме</a>
-            <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
+            <a class="social-link  social-link--in" href="#" title="Мы в Инстаграме">Мы в Инстаграме</a>
+            <a class="social-link  social-link--fb" href="#" title="Мы в Фейсбуке">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--tw" href="#" title="Мы в Твиттере">Мы в Твиттере</a>
           </span>
         </div>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="htmlacademy.ru">Разработано <span>htmlacademy</span></a>
+          <a class="page-footer__copyright-link" href="htmlacademy.ru">Разработано</a>
         </div>
       </div>
     </footer>
