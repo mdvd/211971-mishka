@@ -1,0 +1,44 @@
+.promo__wrapper {
+  padding-left: 35px;
+  padding-right: 35px;
+
+  border: 1px solid #ececec;
+  &--title {
+    border-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &--main {
+    border-top: 0;
+    padding-top: 34px;
+    padding-bottom: 33px;
+  }
+}
+
+.promo__title {
+  position: relative;
+  padding-left: 57px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.promo__title::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 22px;
+  left: 0;
+  top: 9px;
+  background: url("../img/icon-video.svg") no-repeat center;
+}
+
+.promo__video {
+  line-height: 0;
+}
+
+.promo__desc {
+  width: 95%;
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: #444444;
+}
