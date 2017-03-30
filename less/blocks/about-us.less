@@ -14,16 +14,103 @@
 .about-us__advantage-item {
   position: relative;
   padding-top: 86px;
-  &--eko {
-    width: 180px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  &--style, &--box {
-    width: 205px;
+  &--eko {
+    &::before {
+      width: 33px;
+      height: 38px;
+      top: 30px;
+      left: 7px;
+      background-image: url("../img/icon-feature-1.svg");
+    }
+  }
+  &--style {
+    &::before {
+      width: 47px;
+      height: 27px;
+      top: 30px;
+      background-image: url("../img/icon-feature-3.svg");
+    }
   }
   &--like {
-    width: 185px;
+    &::before {
+      width: 34px;
+      height: 27px;
+      top: 35px;
+      left: 7px;
+      background-image: url("../img/icon-feature-5.svg");
+    }
   }
   &--hand {
-    width: 215px;
+    &::before {
+      width: 35px;
+      height: 34px;
+      top: 32px;
+      left: 3px;
+      background-image: url("../img/icon-feature-2.svg");
+    }
+  }
+  &--native {
+    &::before {
+      width: 55px;
+      height: 23px;
+      top: 33px;
+      left: -6px;
+      background-image: url("../img/icon-feature-4.svg");
+    }
+  }
+  &--box {
+    &::before {
+      width: 33px;
+      height: 32px;
+      top: 31px;
+      background-image: url("../img/icon-feature-6.svg");
+    }
+  }
+}
+
+@media @tablet-widths {
+  .page-section.about-us {
+    margin-bottom: 52px;
+  }
+  .about-us__advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .about-us__advantage-item {
+    width: 50%;
+    &--style {
+      order: 3;
+    }
+    &--like {
+      order: 5;
+    }
+    &--hand {
+      order: 2;
+    }
+    &--native {
+      order: 4;
+    }
+    &--box {
+      order: 6;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-section.about-us {
+    box-sizing: border-box;
+    padding-left: 15.5%;
+  }
+  .about-us__advantage-list {
+  }
+  .about-us__advantage-item {
   }
 }
