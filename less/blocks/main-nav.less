@@ -54,6 +54,7 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 79px;
     .container();
   }
@@ -95,26 +96,27 @@
     width: auto;
     .main-nav__item {
       box-shadow: inset 1px 0 0 0 #ececec;
-      padding: 0 35px;
     }
     .main-nav__item:first-child {
       box-shadow: 0 0 0 0;
-      padding-left: 0;
+      a {
+        padding-left: 0;
+      }
     }
     a {
       font-size: 17px;
       line-height: 79px;
+      padding: 0 35px;
     }
   }
   .main-nav__new-list {
     display: block;
-    position: absolute;
-    top: 79px;
-    left: 0;
     a {
       padding: 0;
       margin-right: 60px;
+      margin-top: 18px;
       font-size: 15px;
+      line-height: 24px;
     }
   }
 }

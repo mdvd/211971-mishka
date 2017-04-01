@@ -19,6 +19,7 @@
 
 .page-header__promo {
   display: none;
+  color: #444444;
 }
 
 @media @tablet-widths {
@@ -34,16 +35,14 @@
 
   .page-header__promo {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 97px;
+    margin-left: auto;
+    margin-top: 15px;
   }
 }
 
 @media @desktop-widths {
   .page-header__logo {
-    display: flex;
-    justify-content: center;
-    margin-left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

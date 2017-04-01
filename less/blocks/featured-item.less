@@ -65,16 +65,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-content: stretch;
     padding-top: 55px;
   }
   .featured-item__desc {
+    display: flex;
+    flex-direction: column;
     width: 44%;
-    margin-bottom: 120px;
+  }
+  .featured-item__spec {
+    margin-bottom: auto;
   }
   .featured-item__img {
+    position: relative;
     width: 50%;
-    margin-bottom: 0;
+    margin-bottom: -112px;
   }
   .featured-item__img img {
     width: 333px;
@@ -82,8 +87,6 @@
   }
   .featured-item__price-wrapper {
     width: 44%;
-    position: relative;
-    margin-top: -112px;
   }
 }
 
