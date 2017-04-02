@@ -1,4 +1,16 @@
 .page-section {
   padding-top: 30px;
   padding-bottom: 30px;
+  .container-fluid();
+  @media @tablet-widths {
+    padding-top: 55px;
+  }
+}
+
+@media @desktop-widths {
+  .page-section__title {
+    position: relative;
+    padding-top: 65px;
+    z-index: 1;
+  }
 }

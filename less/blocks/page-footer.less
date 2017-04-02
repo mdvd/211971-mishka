@@ -2,6 +2,14 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__wrapper {
+  .container();
+}
+
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__copyright {
   position: relative;
   border-top: 1px solid #e5e5e5;
@@ -25,5 +33,40 @@
   top: 22px;
   right: 39px;
   background: url("../img/logo-htmlacademy.svg") no-repeat;
+}
 
+@media @tablet-widths {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .page-footer__logo {
+    display: block;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+  .page-footer__social {
+    width: 21%;
+    padding-top: 57px;
+  }
+  .page-footer__copyright {
+    width: 28%;
+    padding: 0;
+    padding-left: 5px;
+    padding-top: 58px;
+  }
+  .page-footer__copyright-link::after {
+    top: 57px;
+    right: 0;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer__social {
+    width: 13.5%;
+  }
+  .page-footer__copyright {
+    width: 18%;
+  }
 }

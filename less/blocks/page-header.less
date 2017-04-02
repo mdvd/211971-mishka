@@ -1,4 +1,4 @@
-.page-header {
+.page-header__top {
   position: relative;
 }
 
@@ -17,5 +17,32 @@
   line-height: 0;
 }
 
-.page-header__nav {
+.page-header__promo {
+  display: none;
+  color: #444444;
+}
+
+@media @tablet-widths {
+  .page-header__top {
+    .container();
+  }
+  .page-header__logo {
+    position: absolute;
+    box-shadow: 0 0 0 0;
+
+    z-index: 5;
+  }
+
+  .page-header__promo {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
