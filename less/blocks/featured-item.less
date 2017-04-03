@@ -1,4 +1,4 @@
-.featured-item {
+.page-section.featured-item {
 }
 
 .featured-item__title {
@@ -22,7 +22,6 @@
 
 .featured-item__spec td {
   border-bottom: 1px solid #ececec;
-  padding-right: 20px;
 }
 
 .featured-item__img {
@@ -40,7 +39,6 @@
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #444444;
 }
 .featured-item__price-wrapper {
@@ -52,12 +50,15 @@
 @media @tablet-widths {
   .featured-item {
     position: relative;
+    h2 {
+      line-height: 30px;
+    }
   }
   .featured-item__title {
     position: absolute;
     width: 100px;
-    right: 10px;
-    top: 60px;
+    right: 12px;
+    top: 57px;
     text-align: center;
     line-height: 17px;
   }
@@ -66,15 +67,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
-    padding-top: 55px;
+    padding-top: 65px;
   }
   .featured-item__desc {
     display: flex;
     flex-direction: column;
     width: 44%;
+    margin-top: -6px;
   }
   .featured-item__spec {
     margin-bottom: auto;
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 38px;
   }
   .featured-item__img {
     position: relative;
@@ -87,6 +92,9 @@
   }
   .featured-item__price-wrapper {
     width: 44%;
+  }
+  .featured-item__price {
+    font-size: 20px;
   }
 }
 

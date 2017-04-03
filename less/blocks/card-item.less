@@ -19,6 +19,12 @@
   border: 1px solid #ececec;
   padding: 28px;
   padding-top: 26px;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card-item__name {
@@ -27,6 +33,12 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card-item__spec {
@@ -50,10 +62,23 @@
 .card-item__to-basket {
   width: 21px;
   height: 19px;
+  padding: 0;
   font-size: 0;
-  background: url("../img/icon-cart.svg") no-repeat center;
   border: none;
-  opacity: 0.2;
+  background-color: #ffffff;
+  .card-item__cart-ico {
+    fill: rgba(34, 31, 31, 0.2);
+  }
+  &:hover {
+    .card-item__cart-ico {
+      fill: #63d1bb;
+    }
+  }
+  &:active {
+    .card-item__cart-ico {
+      fill: rgba(99, 209, 187, 0.3);
+    }
+  }
 }
 
 @media @tablet-widths {

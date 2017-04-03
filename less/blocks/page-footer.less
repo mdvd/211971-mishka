@@ -19,20 +19,21 @@
 }
 
 .page-footer__copyright-link {
+  display: block;
   font-size: 19px;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__copyright-link::after {
-  position: absolute;
-  content: "";
-  width: 27px;
-  height: 34px;
-  top: 22px;
-  right: 39px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+.page-footer__copyright-link svg {
+  position: relative;
+  margin-bottom: -13px;
+  margin-left: 26px;
+  fill: #63d1bb;
 }
 
 @media @tablet-widths {
@@ -45,6 +46,14 @@
     display: block;
     padding-top: 51px;
     padding-bottom: 58px;
+  }
+  .page-footer__logo-img {
+    &:hover{
+      fill: rgba(70, 193, 174, 1);
+    }
+    &:active {
+      fill: rgba(70, 193, 174, 0.3);
+    }
   }
   .page-footer__social {
     width: 21%;

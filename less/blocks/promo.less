@@ -1,6 +1,15 @@
 .promo {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 .promo__wrapper {
   padding-left: 35px;
@@ -37,10 +46,25 @@
 }
 
 .promo__video {
+  position: relative;
   display: flex;
   justify-content: center;
   line-height: 0;
   background-color: #e4e4e4;
+}
+
+.promo__video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+  &:active {
+    transform: scale(0.8) translate(-60%, -60%);
+    opacity: 0.3;
+  }
 }
 
 .promo__desc {
@@ -51,6 +75,9 @@
 }
 
 @media @tablet-widths {
+  .promo {
+    margin-bottom: 63px;
+  }
   .promo__video {
     order: -1;
     height: 455px;
@@ -66,7 +93,6 @@
     &--main {
       padding-top: 9px;
       padding-bottom: 45px;
-      margin-bottom: 33px;
     }
   }
   .promo__desc {

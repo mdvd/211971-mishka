@@ -15,6 +15,12 @@
 
 .page-header__logo a {
   line-height: 0;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__promo {
@@ -24,11 +30,13 @@
 
 @media @tablet-widths {
   .page-header__top {
+    height: 88px;
     .container();
   }
   .page-header__logo {
     position: absolute;
     box-shadow: 0 0 0 0;
+    height: 88px;
 
     z-index: 5;
   }
