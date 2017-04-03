@@ -50,7 +50,7 @@
         <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
       <form class="page-form__form  order-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="order-form__container">
+        <div class="order-form__container  order-form__container--radio">
           <fieldset class="order-form__group-wrapper">
             <legend class="order-form__title">Тип</legend>
             <div class="order-form__group-container">
@@ -61,8 +61,8 @@
             </div>
           </fieldset>
         </div>
-        <div class="order-form__container">
-          <fieldset class="order-form__group-wrapper">
+        <div class="order-form__container  order-form__container--select-color">
+          <fieldset class="order-form__group-wrapper  order-form__group-wrapper--select-color">
             <legend class="order-form__title">Цвет</legend>
             <div class="order-form__group-container  order-form__group-container--checkbox">
               <input class="order-form__check" type="checkbox" name="color-items" checked id="white-items" value="Белый">
@@ -70,7 +70,7 @@
               <input class="order-form__check" type="checkbox" name="color-items" checked id="grey-items" value="Серый">
               <label class="order-form__label  order-form__label--checkbox" for="grey-items">Серый</label>
               <input class="order-form__check" type="checkbox" name="color-items" id="tiffany-items" value="Тиффани">
-              <label class="order-form__label  order-form__label--checkbox" for="tiffany-items">"Тиффани"</label>
+              <label class="order-form__label  order-form__label--checkbox" for="tiffany-items">«Тиффани»</label>
               <input class="order-form__check" type="checkbox" name="color-items" id="black-items" value="Черный">
               <label class="order-form__label  order-form__label--checkbox" for="black-items">Черный</label>
               <input class="order-form__check" type="checkbox" name="color-items" id="pink-items" value="Розовый">
@@ -80,8 +80,8 @@
             </div>
           </fieldset>
         </div>
-        <div class="order-form__container">
-          <fieldset class="order-form__group-wrapper">
+        <div class="order-form__container  order-form__container--name">
+          <fieldset class="order-form__group-wrapper  order-form__group-wrapper--name">
             <legend class="order-form__title">ФИО</legend>
             <div class="order-form__group-container  order-form__group-container--name">
               <label class="order-form__label order-form__label--text" for="first-name">Имя:</label>
@@ -93,22 +93,22 @@
             </div>
           </fieldset>
         </div>
-        <div class="order-form__container">
-          <fieldset class="order-form__group-wrapper">
+        <div class="order-form__container  order-form__container--contacts">
+          <fieldset class="order-form__group-wrapper  order-form__group-wrapper--phone">
             <legend class="order-form__title">Тел</legend>
             <div class="order-form__group-container">
               <input class="order-form__text  order-form__text--phone" type="tel" name="phone-number" placeholder="+7 XXX XX XX*">
             </div>
           </fieldset>
-          <fieldset class="order-form__group-wrapper">
+          <fieldset class="order-form__group-wrapper  order-form__group-wrapper--mail">
             <legend class="order-form__title  order-form__title--mail">E-mail</legend>
             <div class="order-form__group-container">
               <input class="order-form__text  order-form__text--email" type="email" name="e-mail" placeholder="Ваш Email*">
             </div>
           </fieldset>
         </div>
-        <div class="order-form__container">
-          <fieldset class="order-form__group-wrapper">
+        <div class="order-form__container  order-form__container--info">
+          <fieldset class="order-form__group-wrapper  order-form__group-wrapper--info">
             <legend class="order-form__title">Доп</legend>
             <div class="order-form__group-container">
               <textarea class="order-form__info  order-form__info--message" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
