@@ -1,5 +1,5 @@
 .page-section {
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
   .container-fluid();
   @media @tablet-widths {
@@ -7,10 +7,44 @@
   }
 }
 
+.about-us.page-section {
+  padding-top: 45px;
+}
+
+.reviews.page-section {
+  padding-top: 80px;
+}
+
+.catalog-items.page-section {
+  padding-top: 80px;
+  padding-bottom: 53px;
+}
+
+.page-form.page-section {
+  padding-top: 73px;
+  padding-bottom: 29px;
+}
+
 @media @desktop-widths {
   .page-section__title {
     position: relative;
     padding-top: 65px;
     z-index: 1;
+  }
+  .featured-item .page-section__title {
+    padding-top: 70px;
+  }
+  .page-section.featured-item {
+    padding-top: 68px;
+  }
+  .about-us .page-section__title {
+    padding-top: 8px;
+  }
+  .page-section.catalog-items {
+    padding-top: 130px;
+    padding-bottom: 58px;
+  }
+  .page-section.page-form {
+    padding-top: 123px;
   }
 }

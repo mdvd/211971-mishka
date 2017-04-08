@@ -13,7 +13,7 @@
 
 .about-us__advantage-item {
   position: relative;
-  padding-top: 86px;
+  padding-top: 83px;
   &::before {
     content: "";
     position: absolute;
@@ -21,6 +21,7 @@
     background-position: center;
   }
   &--eko {
+    padding-top: 86px;
     &::before {
       width: 33px;
       height: 38px;
@@ -30,6 +31,7 @@
     }
   }
   &--style {
+    padding-top: 84px;
     &::before {
       width: 47px;
       height: 27px;
@@ -68,7 +70,8 @@
     &::before {
       width: 33px;
       height: 32px;
-      top: 31px;
+      top: 30px;
+      left: 2px;
       background-image: url("../img/icon-feature-6.svg");
     }
   }
@@ -77,6 +80,7 @@
 @media @tablet-widths {
   .page-section.about-us {
     margin-bottom: 52px;
+    padding-top: 45px;
   }
   .about-us__advantage-list {
     display: flex;
@@ -86,20 +90,43 @@
   }
   .about-us__advantage-item {
     width: 50%;
+    padding-top: 110px;
+    &--eko {
+      &::before {
+        top: 50px;
+        left: 10px;
+      }
+    }
     &--style {
       order: 3;
+      &::before {
+        top: 54px;
+      }
     }
     &--like {
       order: 5;
+      &::before {
+        top: 60px;
+        left: 10px;
+      }
     }
     &--hand {
       order: 2;
+      &::before {
+        top: 56px;
+      }
     }
     &--native {
       order: 4;
+      &::before {
+        top: 57px;
+      }
     }
     &--box {
       order: 6;
+      &::before {
+        top: 55px;
+      }
     }
   }
 }
@@ -108,8 +135,10 @@
   .page-section.about-us {
     box-sizing: border-box;
     padding-left: 15.5%;
+    padding-top: 0;
   }
-  .about-us__advantage-list {
+  .about-us__advantage-item {
+    width: 40%;
   }
   .about-us__advantage-item {
   }

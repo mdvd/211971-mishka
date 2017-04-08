@@ -1,21 +1,29 @@
 .promo {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin-bottom: 58px;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 .promo__wrapper {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 33px;
+  padding-right: 33px;
 
   border: 1px solid #ececec;
   &--title {
     border-bottom: 0;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
   &--main {
     border-top: 0;
-    padding-top: 34px;
-    padding-bottom: 33px;
+    padding-top: 27px;
+    padding-bottom: 32px;
   }
 }
 
@@ -32,25 +40,44 @@
   flex-shrink: 0;
   width: 32px;
   height: 22px;
-  margin-right: 25px;
+  margin-right: 23px;
   background: url("../img/icon-video.svg") no-repeat center;
+  transform: translate(-2px, -3px);
 }
 
 .promo__video {
+  position: relative;
   display: flex;
   justify-content: center;
   line-height: 0;
   background-color: #e4e4e4;
 }
 
+.promo__video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(2px);
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%) translateY(2px);
+  }
+  &:active {
+    transform: scale(0.8) translate(-60%, -60%) translateY(2px);
+    opacity: 0.3;
+  }
+}
+
 .promo__desc {
   padding-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 13px;
   color: #444444;
 }
 
 @media @tablet-widths {
+  .promo {
+    margin-bottom: 63px;
+  }
   .promo__video {
     order: -1;
     height: 455px;
@@ -66,7 +93,6 @@
     &--main {
       padding-top: 9px;
       padding-bottom: 45px;
-      margin-bottom: 33px;
     }
   }
   .promo__desc {
@@ -78,7 +104,7 @@
 @media @desktop-widths {
   .promo {
     justify-content: flex-end;
-    margin-bottom: 75px;
+    margin-bottom: 104px;
   }
   .promo__title {
     flex-direction: column;
