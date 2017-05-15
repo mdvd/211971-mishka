@@ -10,7 +10,13 @@
     <header class="page-header">
       <div class="page-header__top">
         <div class="page-header__logo">
-          <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Mishka">
+            </picture>
+          </a>
         </div>
         <nav class="page-header__nav  main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button" name="menu">Открыть меню</button>
@@ -49,7 +55,11 @@
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+            </picture>
           </div>
         </a>
         <div class="card-item__wrapper">
@@ -70,7 +80,11 @@
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x" alt="Корзинка для белья">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x" alt="Корзинка для белья">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+            </picture>
           </div>
         </a>
         <div class="card-item__wrapper">
@@ -91,7 +105,11 @@
       <article class="card-item">
         <a class="card-item__link" href="#">
           <div class="card-item__image">
-            <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x" alt="Корзинка для игрушек">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x" alt="Корзинка для игрушек">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Корзинка для игрушек">
+            </picture>
           </div>
         </a>
         <div class="card-item__wrapper">
@@ -126,7 +144,11 @@
             <polygon fill="#FFFFFF" points="285.733,403.138 285.733,438.846 315.48,420.992 	"/>
           </g>
         </svg>
-        <video src="#" preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+ -        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="catalog-video">
+        </picture>
       </div>
       <div class="promo__wrapper  promo__wrapper--main">
         <div class="promo__desc">
