@@ -1,5 +1,8 @@
 .reviews {
   padding-bottom: 39px;
+  @media @mobile-widths-only and (min-resolution: 144dpi), @mobile-widths-only and (min-resolution: 1.5dppx) {
+    background-image: none;
+  }
 }
 .reviews__item {
   margin: 0;
@@ -53,6 +56,10 @@
     margin-bottom: 46px;
     width: 100%;
     background: url("../img/review@1x.jpg") no-repeat;
+    @media @retina {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
   .reviews__wrapper {
     display: flex;

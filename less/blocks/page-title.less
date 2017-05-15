@@ -15,6 +15,10 @@
 
 .page-title--home {
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -17px;
+  @media @mobile-widths-only and (min-resolution: 144dpi), @mobile-widths-only and (min-resolution: 1.5dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
   .page-title__wrapper {
     height: 418px;
   }
@@ -104,7 +108,13 @@
       background-size: auto 23px;
     }
   }
+
   .page-title--home {
+    background: #f9f9f9 url("../img/hero-desktop@1x.jpg") no-repeat center -17px;
+    @media @retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
     .page-title__wrapper{
       height: 675px;
       .container-fluid();
